@@ -4,13 +4,18 @@
 
 class Task
 {
-    public:
-        Task();
-        virtual ~Task();
+public:
+    Task();
+    Task(double x, double y, double z);
+    virtual ~Task();
 
-    protected:
+    double Set_d(double x, double y, double z);
+    void Result1();
+protected:
 
-    private:
+private:
+    double x, y, z, c;
+    friend void printRes(Task &res);
 };
 
 #endif // TASK_H
