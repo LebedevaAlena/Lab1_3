@@ -14,7 +14,7 @@ public:
 protected:
 
 private:
-    double x, y, z, c;
+    double x, y, z, h;
     friend void printRes(Task &res);
 };
 
